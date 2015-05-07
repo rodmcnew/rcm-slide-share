@@ -15,7 +15,7 @@
 
 namespace Reliv\RcmSlideShare;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
@@ -50,6 +50,6 @@ class SlideShareApiFactory implements FactoryInterface
             new Client(),
             $config['apiKey'],
             $config['sharedSecret'],
-            $config['userName']);
+            $config['username']);
     }
 } 

@@ -16,7 +16,7 @@
 namespace Reliv\RcmSlideShare;
 
 use Zend\Mvc\Controller\AbstractActionController;
-
+use Zend\View\Model\JsonModel;
 
 /**
  * SlideShareApiController
@@ -45,8 +45,9 @@ class ApiController extends AbstractActionController
         $this->api = $api;
     }
 
-    public function index()
+    public function indexAction()
     {
-
+        $this->response->setContent(json_encode($this->api->getSlideShowsByCurrentUser()));
+        return $this->response;
     }
 }

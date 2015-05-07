@@ -15,7 +15,7 @@
 
 namespace Reliv\RcmSlideShare;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 
 
 /**
@@ -78,7 +78,7 @@ class SlideShareApi
                     $requestParams
             ]
         );
-        return $res->getResponseBody();
+        return $res->xml();
     }
 
     /**

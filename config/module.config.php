@@ -32,12 +32,12 @@ return [
     ],
     'router' => [
         'routes' => [
-            'genealogy' => [
+            '/rcm-slide-share/api/slide-shows' => [
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => [
-                    'route' => '/rcm-slide-share/api/slideshows',
+                    'route' => '/rcm-slide-share/api/slide-shows',
                     'defaults' => [
-                        'controller' => 'RcmSlideShare/ApiController',
+                        'controller' => 'Reliv\RcmSlideShare\ApiController',
                         'action' => 'index'
                     ],
                 ],
@@ -46,16 +46,16 @@ return [
     ],
     'controllers' => [
         'config_factories' => [
-            'RcmSlideShare/ApiController' => [
+            'Reliv\RcmSlideShare\ApiController' => [
                 'arguments' => [
-                    'RcmSlideShare/SlideShareApi'
+                    'RcmSlideShare\SlideShareApi'
                 ]
             ]
         ]
     ],
     'service_manager' => [
         'factories' => [
-            'RcmSlideShare/SideShareApi' => 'RcmSlideShare/SlideShareApiFactory'
+            'RcmSlideShare\SlideShareApi' => 'Reliv\RcmSlideShare\SlideShareApiFactory'
         ]
     ],
     'view_manager' => [
