@@ -1,0 +1,35 @@
+{
+    "name": "reliv/rcm-slide-share",
+    "description": "Slide share plugin for RCM",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "reliv",
+        "slide",
+        "share",
+        "slideshare",
+        "module",
+        "zf2"
+    ],
+    "homepage": "https://github.com/reliv/RcmUser",
+    "authors": [
+        {
+            "name": "Rod McNew",
+            "email": "rmcnew@relivinc.com",
+            "homepage": "https://github.com/reliv"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "reliv/rcm": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Reliv\\RcmSlideShare": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}
