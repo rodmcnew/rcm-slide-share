@@ -66,7 +66,7 @@ return [
     'asset_manager' => [
         'resolver_configs' => [
             'aliases' => [
-                'modules/rcm-call-to-action-box/' => __DIR__ . '/../public/',
+                'modules/rcm-slide-share/' => __DIR__ . '/../public/',
             ],
             'collections' => [
                 // required for admin edit //
