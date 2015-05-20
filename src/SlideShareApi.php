@@ -17,7 +17,6 @@ namespace Reliv\RcmSlideShare;
 
 use GuzzleHttp\Client;
 
-
 /**
  * SlideShareApi
  *
@@ -33,7 +32,10 @@ use GuzzleHttp\Client;
  */
 class SlideShareApi
 {
-    protected $apiKey, $sharedSecret, $username, $client;
+    protected $apiKey;
+    protected $sharedSecret;
+    protected $username;
+    protected $client;
 
     public function __construct(
         Client $client,
