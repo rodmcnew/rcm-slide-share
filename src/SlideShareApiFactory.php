@@ -19,7 +19,6 @@ use GuzzleHttp\Client;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-
 /**
  * SlideShareApiFactory
  *
@@ -50,6 +49,7 @@ class SlideShareApiFactory implements FactoryInterface
             new Client(),
             $config['apiKey'],
             $config['sharedSecret'],
-            $config['username']);
+            $config['username']
+        );
     }
-} 
+}
