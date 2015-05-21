@@ -29,8 +29,8 @@
     "squizlabs/php_codesniffer": "2.*"
   },
   "autoload": {
-    "psr-0": {
-      "Reliv\\RcmSlideShare": "src/"
+    "psr-4": {
+      "Reliv\\RcmSlideShare\\": "src/"
     }
   }
 }
