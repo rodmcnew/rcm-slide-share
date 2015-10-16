@@ -1,5 +1,5 @@
 {
-  "name": "reliv/rcm-slide-share",
+  "name": "rcm/slide-share",
   "description": "Slide share plugin for RCM",
   "type": "library",
   "license": "BSD-3-Clause",
@@ -22,7 +22,7 @@
   "require": {
     "php": ">=5.3.3",
     "zendframework/zendframework": "2.*",
-    "reliv/rcm": "*"
+    "rcm/core": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.6.*",
